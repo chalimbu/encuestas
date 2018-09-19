@@ -14,7 +14,7 @@ import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
-
+import java.sql.*; 
 /**
  *
  * @author sebastian
@@ -24,27 +24,25 @@ import javax.swing.JOptionPane;
  public String table,user,pass;   
     
    public Conexion(){
-        this.table="acta5";
-        this.user="root";
-        this.pass="";
+        this.table="encuestas3";
+        this.user="encuestas2";
+        this.pass="encuestas2123";
     }
     
-    public Connection conectar(){
-     Connection conn=null;
+    public Connection conectar() throws ClassNotFoundException{
+     Connection con=null;
      try {
-         String url = "jdbc:mysql://127.0.0.1:3306/"+table+"?user="+user+"&password="+pass;
-         Driver d = (Driver)Class.forName("com.mysql.jdbc.Driver").newInstance();
-         conn = DriverManager.getConnection(url);
+         Class.forName("com.mysql.jdbc.Driver");  
+         con = DriverManager.getConnection("jdbc:mysql://localhost:3306/"+table,user,pass);
          
-         if(conn.isClosed()){
+         if(con.isClosed()){
              JOptionPane.showMessageDialog(null, "se perdio la conexion con la base de datos contacte con soporte ");
          }
-         return conn;
-     } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | SQLException ex) {
-         JOptionPane.showMessageDialog(null, "se perdio la conexion con la base de datos contacte con soporte");
-         Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);
-      }
-     return conn;
+         return con;
+     } catch (SQLException ex) {
+         JOptionPane.showMessageDialog(null, "se perdio la conexion con la base de datos contacte con soporte ");
+     }
+     return con;
     }
     
 }
