@@ -160,15 +160,115 @@ public class encuesta {
      p7.lista.add(r73);
      this.lista.add(p7);
      
-     pregunta p7=new pregunta("6. ¿Tu Trabajo como Ingeniero Informático es? * *",24,7);
-     respuesta r71=new respuesta(1,"Formal");
-     respuesta r72=new respuesta(2,"Informal");
-     respuesta r73=new respuesta(3,"No trabajo como ingeniero informatico");
-     p7.lista.add(r71);
-     p7.lista.add(r72);
-     p7.lista.add(r73);
-     this.lista.add(p7);
+     pregunta p8=new pregunta("7. ¿Cuál es el nombre de la empresa en la cual trabajas? *",25,8);
+     p8.lista=null;
+     this.lista.add(p8);
      
+     pregunta p9=new pregunta("8. ¿Cuál es el carácter de la entidad donde trabajas?  *",26,9);
+     respuesta r91=new respuesta(1,"privada");
+     respuesta r92=new respuesta(2,"publica");
+     p9.lista.add(r91);
+     p9.lista.add(r92);
+     this.lista.add(p9);
+     
+     pregunta p10=new pregunta("9. Nivel del cargo que desempeñas  *",27,10);
+     respuesta r101=new respuesta(1,"Directivo");
+     respuesta r102=new respuesta(2,"Mando medio");
+     respuesta r103=new respuesta(3,"Asesor");
+     respuesta r104=new respuesta(4,"otro:");
+     p10.lista.add(r101);
+     p10.lista.add(r102);
+     p10.lista.add(r103);
+     p10.lista.add(r104);
+     this.lista.add(p10);
+     
+     pregunta p11=new pregunta("10. ¿En qué rango se encuentran actualmente tus ingresos (integral)?  *",28,11);
+     respuesta r111=new respuesta(1,"$1.501.000 - $2.000.000");
+     respuesta r112=new respuesta(2,"$2.001.000 - $3.000.000");
+     respuesta r113=new respuesta(3,"$3.001.000 o más");
+     respuesta r114=new respuesta(4,"No trabajo como Ingeniero Informático");
+     p11.lista.add(r111);
+     p11.lista.add(r112);
+     p11.lista.add(r113);
+     p11.lista.add(r114);
+     this.lista.add(p11);
+     
+     pregunta p12=new pregunta("11. ¿Cuál de las siguientes cargos desempeñas actualmente?  *",29,12);
+     respuesta r121=new respuesta(1,"Analista");
+     respuesta r122=new respuesta(2,"Desarrollador");
+     respuesta r123=new respuesta(3,"Líder de desarrollo");
+     respuesta r124=new respuesta(4,"Jefe de sistemas");
+     respuesta r125=new respuesta(5,"Programador");
+     respuesta r126=new respuesta(6,"Jefe/Director de proyectos");
+     respuesta r127=new respuesta(7,"Administrador de bases de datos");
+     respuesta r128=new respuesta(8,"Arquitecto de software");
+     respuesta r129=new respuesta(9,"Analista de pruebas");
+     respuesta r1210=new respuesta(10,"Ingeniero de servicios");
+     respuesta r1212=new respuesta(11,"Ingeniero de seguridad de la información");
+     respuesta r1213=new respuesta(12,"Gerente/Director Comercial");
+     respuesta r1214=new respuesta(13,"Gerente de producto");
+     respuesta r1215=new respuesta(14,"Jefe/Gerente de infraestructura");
+     respuesta r1216=new respuesta(15,"Científico de Datos");
+     respuesta r1217=new respuesta(16,"Otro:");
+     p12.lista.add(r121);
+     p12.lista.add(r122);
+     p12.lista.add(r123);
+     p12.lista.add(r124);
+     p12.lista.add(r125);
+     p12.lista.add(r126);
+     p12.lista.add(r127);
+     p12.lista.add(r128);
+     p12.lista.add(r129);
+     p12.lista.add(r1210);
+     p12.lista.add(r1212);
+     p12.lista.add(r1213);
+     p12.lista.add(r1214);
+     p12.lista.add(r1215);
+     p12.lista.add(r1216);
+     p12.lista.add(r1217);
+     this.lista.add(p12);
+     
+     pregunta p13=new pregunta("12. Si no trabajas como Ingeniero Informático, en qué trabajas?*",30,13);
+     p13.lista=null;
+     this.lista.add(p13);
+     
+     pregunta p14=new pregunta("13. Cuál es la razón por la cual no trabajas como Ingeniero Informático? *",31,14);
+     p14.lista=null;
+     this.lista.add(p14);
+     
+     pregunta p15=new pregunta("14. ¿Has realizado estudios después de egresar de Ingeniero Informático? *",32,15);
+     p15.lista.add(new respuesta(1,"cursos"));
+     p15.lista.add(new respuesta(2,"Diplomados"));
+     p15.lista.add(new respuesta(3,"Especializaciones"));
+     p15.lista.add(new respuesta(4,"Maestria"));
+     p15.lista.add(new respuesta(5,"Doctorado"));
+     p15.lista.add(new respuesta(6,"otro"));
+     this.lista.add(p15);
+     
+     pregunta p16=new pregunta("15. ¿En el ámbito académico, empresarial o investigativo, tienes publicaciones? *",33,16);
+     p16.lista.add(new respuesta(1,"Si"));
+     p16.lista.add(new respuesta(2,"No"));
+     this.lista.add(p16);
+     
+     pregunta p17=new pregunta("16. Número de publicaciones (título y en dónde fue publicada) (De no contar con ninguna responder 0) *",34,17);
+     p17.lista=null;
+     this.lista.add(p17);
+     
+     pregunta p18=new pregunta("17. Número de citaciones y co-citaciones (De no contar con ninguna responder 0) *",35,18);
+     p18.lista=null;
+     this.lista.add(p18);
+    
+     pregunta p19=new pregunta("18. Información de la producción científica en bases de datos internacionales de revistas indexadas (De no contar con ninguna responder 0) *",36,19);
+     p19.lista=null;
+     this.lista.add(p19);
+    
+     pregunta p20=new pregunta("19. ¿Ha participado en alguna red académica o profesional? ¿cuál? *",37,20);
+     p20.lista=null;
+     this.lista.add(p20);
+     
+     pregunta p21=new pregunta("20.¿ ha tenido alguna distinción académica o profesional? ¿cuál? *",38,21);
+     p21.lista=null;
+     this.lista.add(p21);
     }
     
     }
