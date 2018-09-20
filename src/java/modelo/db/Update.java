@@ -40,4 +40,22 @@ public class Update {
              // se realizo la actualizacion
             }
     }
+    
+    public boolean actualizarRespuestAbierta(int idEncuestado,int idPregunta,String abierta) throws SQLException{
+        PreparedStatement pe= con.prepareStatement("UPDATE respuestas SET abierta=? WHERE `id-encuestado`=? and `id-pregunta`=?");
+        pe.setString(1, abierta);
+        pe.setInt(2, idEncuestado);
+        pe.setInt(3, idPregunta);
+         int res = pe.executeUpdate();
+         return res>0;
+    }
+    
+    public boolean actualizarRespuestaCerrada(int idEncuestado,int idPregunta,int respondido) throws SQLException{
+        PreparedStatement pe= con.prepareStatement("UPDATE respuestas SET `valor-respondido`=? WHERE `id-encuestado`=? and `id-pregunta`=?");
+        pe.setInt(1, respondido);
+        pe.setInt(2, idEncuestado);
+        pe.setInt(3, idPregunta);
+         int res = pe.executeUpdate();
+         return res>0;
+    }
 }

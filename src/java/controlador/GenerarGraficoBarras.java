@@ -31,7 +31,7 @@ public class GenerarGraficoBarras extends HttpServlet {
         try {
             Conexion con = new Conexion();
             Connection cone;
-            cone = con.conectar();
+            cone = con.conectar();///
             controlDeAcceso cta=new controlDeAcceso(cone);
             if(cta.tieneAccesoDeAnalista(request)){
                 /*response.setContentType("image/PNG");

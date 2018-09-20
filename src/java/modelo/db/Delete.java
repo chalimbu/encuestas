@@ -26,4 +26,19 @@ public class Delete {
         pe2.setString(3, tipoAsistente);
         int res=pe2.executeUpdate();
                 }
+    //elimina es decir cierra la sesion de la ip y agente, para el perfil analista
+    public void eliminarIniciadoAdmin(String ip,String agente) throws SQLException{
+        PreparedStatement pe2= con.prepareStatement("delete from `iniciados-admin` where direccion=? and name=?");
+        pe2.setString(1, ip);
+        pe2.setString(2, agente);
+        int res=pe2.executeUpdate();
+                }
+    //elimina es decir cierra la sesion de la ip y agente, para el perfil analista
+    public void eliminarIniciadoAnalista(String ip,String agente) throws SQLException{
+        PreparedStatement pe2= con.prepareStatement("delete from `iniciados-analista` where direccion=? and name=?");
+        pe2.setString(1, ip);
+        pe2.setString(2, agente);
+        int res=pe2.executeUpdate();
+        }
+    
 }

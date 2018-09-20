@@ -4,9 +4,65 @@
         <servlet-name>EncuestaEmpresario</servlet-name>
         <servlet-class>controlador.EncuestaEmpresario</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>EncuestaEgresado</servlet-name>
+        <servlet-class>controlador.EncuestaEgresado</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GuardarEncuestaEmpresario</servlet-name>
+        <servlet-class>controlador.GuardarEncuestaEmpresario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GuardarEncuestaEgresado</servlet-name>
+        <servlet-class>controlador.GuardarEncuestaEgresado</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ConteoRespuestas</servlet-name>
+        <servlet-class>controlador.ConteoRespuestas</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>controlador.Login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DesLogeo</servlet-name>
+        <servlet-class>controlador.DesLogeo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GenerarGraficoBarras</servlet-name>
+        <servlet-class>controlador.GenerarGraficoBarras</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>EncuestaEmpresario</servlet-name>
         <url-pattern>/encuestaEmpresario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EncuestaEgresado</servlet-name>
+        <url-pattern>/encuestaEgresado</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GuardarEncuestaEmpresario</servlet-name>
+        <url-pattern>/guardarEncuestaEmpresario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GuardarEncuestaEgresado</servlet-name>
+        <url-pattern>/guardarEncuestaEgresado</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ConteoRespuestas</servlet-name>
+        <url-pattern>/conteoRespuestas</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DesLogeo</servlet-name>
+        <url-pattern>/desLogeo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GenerarGraficoBarras</servlet-name>
+        <url-pattern>/generarGraficoBarras</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
