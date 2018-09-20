@@ -32,6 +32,10 @@
         <servlet-name>GenerarGraficoBarras</servlet-name>
         <servlet-class>controlador.GenerarGraficoBarras</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>VerAnalista</servlet-name>
+        <servlet-class>controlador.VerAnalista</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>EncuestaEmpresario</servlet-name>
         <url-pattern>/encuestaEmpresario</url-pattern>
@@ -63,6 +67,10 @@
     <servlet-mapping>
         <servlet-name>GenerarGraficoBarras</servlet-name>
         <url-pattern>/generarGraficoBarras</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VerAnalista</servlet-name>
+        <url-pattern>/verAnalista</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -154,4 +154,17 @@ public class Select {
         ResultSet rs = stmt.executeQuery(query);
         return rs.next();
     }
+    
+    public ResultSet verAnalistas() throws SQLException{
+        ResultSet rs = null;
+        Statement st;
+        
+            st = con.createStatement();
+            rs = st.executeQuery("select * from `usuarios` inner join `user-rol` on usuarios.id= `user-rol`.`id-usuario` having `id-rol`=2;");
+        
+        return rs;
+
+        
+    }
 }
+
