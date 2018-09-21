@@ -70,4 +70,20 @@ public class Insert {
         return res>0;
     }
     
+    public void registrarNuevoAnalista(String usuario,String contrasena) throws SQLException{
+    //INSERT INTO `iniciados-admin`(direccion,name) VALUES ("192.4384.232.24","agentex");
+    PreparedStatement pe;
+        pe = con.prepareStatement("insert into usuarios(usuario,contrasena) values (?,?)");
+        pe.setString(1, usuario);
+        pe.setString(2, contrasena);
+        int res=pe.executeUpdate();
+    
+    PreparedStatement pe2;
+        pe2 = con.prepareStatement(" insert into `user-rol`(`id-usuario`,`id-rol`) values((select id from usuarios where id is not null and usuario=? and contrasena=? ORDER BY id desc limit 1),2);");
+        pe2.setString(1, usuario);
+        pe2.setString(2, contrasena);
+        int res2=pe.executeUpdate();
+        
+    }
+    
     }

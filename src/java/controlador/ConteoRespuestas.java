@@ -87,8 +87,16 @@ public class ConteoRespuestas extends HttpServlet {
             }
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(ConteoRespuestas.class.getName()).log(Level.SEVERE, null, ex);
+            MensajeError error = new MensajeError("problema ingresando a la base de datos ");
+                String json = new Gson().toJson(error);
+                response.getWriter().write(json);
+                return;
         } catch (SQLException ex) {
             Logger.getLogger(ConteoRespuestas.class.getName()).log(Level.SEVERE, null, ex);
+            MensajeError error = new MensajeError("problema ingresando a la base de datos ");
+                String json = new Gson().toJson(error);
+                response.getWriter().write(json);
+                return;
         }
 
     }

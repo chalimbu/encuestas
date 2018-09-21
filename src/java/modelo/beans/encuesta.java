@@ -22,16 +22,16 @@ public class encuesta {
     titulo="Encuesta a empresarios, lideres y agentes externos";
     enunciado="En el proceso de autoevaluación permanente, con miras a fortalecer los procesos de mejoramiento continuo, es de vital importancia conocer la apreciación de los EMPRESARIOS, LÍDERES Y AGENTES EXTERNOS acerca de los diferentes aspectos del Programa.";					
     
-    pregunta p19= new pregunta("Informacion General",0,1);
+    pregunta p19= new pregunta("Informacion General",0,1,3);
     p19.lista=null;
     this.lista.add(p19);
     
-    pregunta p1=new pregunta("Nombre de la Empresa u Organización a la que pertenece:",1,2);
+    pregunta p1=new pregunta("Nombre de la Empresa u Organización a la que pertenece:",1,2,0);
     p1.lista=null;
     this.lista.add(p1);
     
     
-    pregunta p2=new pregunta("Activida principal de su empresa",2,3);
+    pregunta p2=new pregunta("Activida principal de su empresa",2,3,0);
     p2.lista=null;
     this.lista.add(p2);
     
@@ -117,11 +117,11 @@ public class encuesta {
      titulo="Tu vida como ingeniero informatico";
     enunciado="¡Queremos conocer un poco de tu vida laboral como egresado! Para ello hemos diseñado una breve encuesta que nos permitirá dos cosas: primero, tener una radiografía muy importante de tu situación laboral y la de otros colegas tuyos, nuestros egresados; y, segundo, consolidar información que nos permita revisar nuestro programa. Queremos tu ayuda, seguro no te toma más de diez minutos diligenciarla! De antemano muchas gracias por tu participación.";					
     
-    pregunta p1= new pregunta("Dirección de correo electrónico *",18,1);
+    pregunta p1= new pregunta("Dirección de correo electrónico *",18,1,0);
     p1.lista=null;
     this.lista.add(p1);
     
-    pregunta p2= new pregunta("1.Cual es tu nombre completo y tus apellidos",19,2);
+    pregunta p2= new pregunta("1.Cual es tu nombre completo y tus apellidos",19,2,0);
     p2.lista=null;
     this.lista.add(p2);
     
@@ -136,7 +136,7 @@ public class encuesta {
     p3.lista.add(r34);
     this.lista.add(p3);
     
-     pregunta p4=new pregunta("3. ¿En qué fecha egresaste del Politécnico? *",21,4);
+     pregunta p4=new pregunta("3. ¿En qué fecha egresaste del Politécnico? *",21,4,0);
      p4.lista=null;
      this.lista.add(p4);
      
@@ -147,7 +147,7 @@ public class encuesta {
      p5.lista.add(r52);
      this.lista.add(p5);
      
-     pregunta p6=new pregunta("5. ¿Cuánto tiempo llevas trabajando, específicamente como Ingeniero Informatico (en años)? *",23,6);
+     pregunta p6=new pregunta("5. ¿Cuánto tiempo llevas trabajando, específicamente como Ingeniero Informatico (en años)? *",23,6,0);
      p6.lista=null;
      this.lista.add(p6);
     
@@ -160,7 +160,7 @@ public class encuesta {
      p7.lista.add(r73);
      this.lista.add(p7);
      
-     pregunta p8=new pregunta("7. ¿Cuál es el nombre de la empresa en la cual trabajas? *",25,8);
+     pregunta p8=new pregunta("7. ¿Cuál es el nombre de la empresa en la cual trabajas? *",25,8,0);
      p8.lista=null;
      this.lista.add(p8);
      
@@ -171,7 +171,7 @@ public class encuesta {
      p9.lista.add(r92);
      this.lista.add(p9);
      
-     pregunta p10=new pregunta("9. Nivel del cargo que desempeñas  *",27,10);
+     pregunta p10=new pregunta("9. Nivel del cargo que desempeñas  *",27,10,2);
      respuesta r101=new respuesta(1,"Directivo");
      respuesta r102=new respuesta(2,"Mando medio");
      respuesta r103=new respuesta(3,"Asesor");
@@ -193,7 +193,7 @@ public class encuesta {
      p11.lista.add(r114);
      this.lista.add(p11);
      
-     pregunta p12=new pregunta("11. ¿Cuál de las siguientes cargos desempeñas actualmente?  *",29,12);
+     pregunta p12=new pregunta("11. ¿Cuál de las siguientes cargos desempeñas actualmente?  *",29,12,2);
      respuesta r121=new respuesta(1,"Analista");
      respuesta r122=new respuesta(2,"Desarrollador");
      respuesta r123=new respuesta(3,"Líder de desarrollo");
@@ -228,15 +228,15 @@ public class encuesta {
      p12.lista.add(r1217);
      this.lista.add(p12);
      
-     pregunta p13=new pregunta("12. Si no trabajas como Ingeniero Informático, en qué trabajas?*",30,13);
+     pregunta p13=new pregunta("12. Si no trabajas como Ingeniero Informático, en qué trabajas?*",30,13,0);
      p13.lista=null;
      this.lista.add(p13);
      
-     pregunta p14=new pregunta("13. Cuál es la razón por la cual no trabajas como Ingeniero Informático? *",31,14);
+     pregunta p14=new pregunta("13. Cuál es la razón por la cual no trabajas como Ingeniero Informático? *",31,14,0);
      p14.lista=null;
      this.lista.add(p14);
      
-     pregunta p15=new pregunta("14. ¿Has realizado estudios después de egresar de Ingeniero Informático? *",32,15);
+     pregunta p15=new pregunta("14. ¿Has realizado estudios después de egresar de Ingeniero Informático? *",32,15,2);
      p15.lista.add(new respuesta(1,"cursos"));
      p15.lista.add(new respuesta(2,"Diplomados"));
      p15.lista.add(new respuesta(3,"Especializaciones"));
@@ -250,23 +250,23 @@ public class encuesta {
      p16.lista.add(new respuesta(2,"No"));
      this.lista.add(p16);
      
-     pregunta p17=new pregunta("16. Número de publicaciones (título y en dónde fue publicada) (De no contar con ninguna responder 0) *",34,17);
+     pregunta p17=new pregunta("16. Número de publicaciones (título y en dónde fue publicada) (De no contar con ninguna responder 0) *",34,17,0);
      p17.lista=null;
      this.lista.add(p17);
      
-     pregunta p18=new pregunta("17. Número de citaciones y co-citaciones (De no contar con ninguna responder 0) *",35,18);
+     pregunta p18=new pregunta("17. Número de citaciones y co-citaciones (De no contar con ninguna responder 0) *",35,18,0);
      p18.lista=null;
      this.lista.add(p18);
     
-     pregunta p19=new pregunta("18. Información de la producción científica en bases de datos internacionales de revistas indexadas (De no contar con ninguna responder 0) *",36,19);
+     pregunta p19=new pregunta("18. Información de la producción científica en bases de datos internacionales de revistas indexadas (De no contar con ninguna responder 0) *",36,19,0);
      p19.lista=null;
      this.lista.add(p19);
     
-     pregunta p20=new pregunta("19. ¿Ha participado en alguna red académica o profesional? ¿cuál? *",37,20);
+     pregunta p20=new pregunta("19. ¿Ha participado en alguna red académica o profesional? ¿cuál? *",37,20,0);
      p20.lista=null;
      this.lista.add(p20);
      
-     pregunta p21=new pregunta("20.¿ ha tenido alguna distinción académica o profesional? ¿cuál? *",38,21);
+     pregunta p21=new pregunta("20.¿ ha tenido alguna distinción académica o profesional? ¿cuál? *",38,21,0);
      p21.lista=null;
      this.lista.add(p21);
     }

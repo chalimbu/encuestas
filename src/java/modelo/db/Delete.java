@@ -41,4 +41,12 @@ public class Delete {
         int res=pe2.executeUpdate();
         }
     
+    public void eliminarAnalista(int idAnalista) throws SQLException{
+        PreparedStatement pe2= con.prepareStatement("delete from usuarios where id=?");
+        pe2.setInt(1, idAnalista);
+        int res=pe2.executeUpdate();
+        PreparedStatement pe3= con.prepareStatement("delete from `user-rol` where `id-usuario`=?");
+        pe3.setInt(1, idAnalista);
+        int res1=pe3.executeUpdate();
+    }
 }

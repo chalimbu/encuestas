@@ -154,4 +154,35 @@ public class Select {
         ResultSet rs = stmt.executeQuery(query);
         return rs.next();
     }
+    
+    public ResultSet listaRespuestasConValor(int idPregunta) throws SQLException{
+        Statement stmt = null;
+        String query = "select distinct `valor-respondido` as vr,"
+                + "(select count(`id-encuestado`) from respuestas "
+                + "where `valor-respondido`=vr and `id-pregunta`="+idPregunta+") as contadorRespuestas "
+                + "from respuestas where `id-pregunta`="+idPregunta+" order by vr asc";
+        stmt = con.createStatement();
+        ResultSet rs = stmt.executeQuery(query);
+        return rs;
+    }
+    
+        
+    public ResultSet verAnalistas() throws SQLException{
+        ResultSet rs = null;
+        Statement st;
+        
+            st = con.createStatement();
+            rs = st.executeQuery("select * from `usuarios` inner join `user-rol` on usuarios.id= `user-rol`.`id-usuario` having `id-rol`=2");
+        
+        return rs;
+        
+    }
+    
+    public ResultSet respuestasAbiertas(int idPregunta) throws SQLException{
+        Statement stmt = null;
+        String query = "select abierta from `respuestas` where `id-pregunta`="+idPregunta;
+        stmt = con.createStatement();
+        ResultSet rs = stmt.executeQuery(query);
+        return rs;
+    }
 }
