@@ -31,7 +31,7 @@ public class CrearAnalista extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        try {
+        try {//que ams 
             Conexion con = new Conexion();
             Connection cone;
             cone = con.conectar();
